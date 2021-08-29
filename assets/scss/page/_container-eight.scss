@@ -1,0 +1,15 @@
+#container-eight {
+    @include grid(1fr, 1fr);
+
+    .container {
+        @include grid(1fr 1fr 1fr, 1fr);
+
+        .card {
+            padding: 10px;
+
+            @media screen and (max-width: 480px){
+                padding: 0;
+            }
+        }
+    }
+}

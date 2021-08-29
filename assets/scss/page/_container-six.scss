@@ -1,0 +1,7 @@
+#container-six {
+    .container {
+        @include grid(1fr, 1fr);
+
+        @import 'slider';
+    }
+}

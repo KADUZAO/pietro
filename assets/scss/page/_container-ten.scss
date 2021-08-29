@@ -1,0 +1,5 @@
+#container-ten {
+    .container {
+        @include grid(1fr 1fr, 1fr)
+    }
+}

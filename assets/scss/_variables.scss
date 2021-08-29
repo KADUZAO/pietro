@@ -1,0 +1,20 @@
+//COLORS START
+$color-primary: #ff0000;
+$color-secondary: #eeff00;
+$color--back-primary: #fff;
+$color--back-secondary: #000;
+//COLORS END
+
+//FONT START
+    //FAMILY START
+        @import 'fonts';
+        $font--family-title: 'sfprobold', sans-serif;
+        $font--family-subtitle: 'sdpromedium', sans-serif;
+    //FAMILY END
+    //SIZE START
+        $font--size-title: 2.5rem;
+        $font--size-subtitle: 1.5rem;
+        $font--size-text: 1.1rem;
+        $font--size-link: 1rem;
+    //SIZE START
+//FONT END

@@ -1,0 +1,21 @@
+@import '../base';
+header {
+    @import 'container-one';
+}
+
+main {
+    @import 'container-two';
+    @import 'container-three';
+    @import 'container-four';
+    @import 'container-five';
+    @import 'container-six';
+    @import 'container-seven';
+    @import 'container-eight';
+    @import 'container-nine';
+    @import 'container-ten';
+    @import 'container-eleven';
+}
+
+footer {
+    @import 'container-twowelve';
+}

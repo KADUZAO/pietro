@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+@import 'variables';
+
+html {
+    background-color: #f3f3f3;
+
+    @media screen and (max-width: 1080px){
+        & {
+            font-size: 93.75%;
+        }
+    }
+
+    @media screen and (max-width: 720px){
+        & {
+            font-size: 87.5%;
+        }
+    }
+}
+
+body {
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: linear-gradient(top, $color-secondary, $color-primary);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color--back-primary;
+        border-radius: 20px;
+        border: 1px solid $color--back-primary;
+    }
+}
+
+@import 'program';
+
+.title > h1,
+h1.title,
+.title > h2,
+h2.title,
+.title > h3,
+h3.title,
+.title > h4,
+h4.title,
+.title > h5,
+h5.title,
+.title > h6,
+h6.title,
+.title > p,
+p.title {
+    font-size: $font--size-title;
+    font-family: $font--family-title;
+    @include text(0.7rem);
+    font-weight: bold;
+}
+
+.subtitle > p,
+p.subtitle {
+    font-size: $font--size-subtitle;
+    font-family: $font--family-subtitle;
+    @include text(0.3rem);
+}
+
+.text > p,
+p.text,
+.text > li,
+li.text {
+    font-size: $font--size-text;
+    font-family: $font--family-subtitle;
+    @include text(1rem)
+}
+
+.link > a,
+a.link {
+    font-size: $font--size-link;
+    font-family: $font--family-subtitle;
+    @include text(1rem);
+}
+
+@import 'buttons';

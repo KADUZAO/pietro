@@ -1,0 +1,7 @@
+#container-three {
+    @include grid(1fr, 1fr);
+
+    .container {
+        @include grid(1fr 1fr, 1fr)
+    }
+}

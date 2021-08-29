@@ -1,0 +1,24 @@
+#container-twowelve {
+    margin-top: 2rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.994);
+    .container {
+        @include grid(1fr 1fr 1fr, 1fr 1fr 1fr);
+
+        .logo {
+            display: grid;
+            width: 100%;
+
+            img {
+                width: 5rem;
+                margin: auto;
+            }
+        }
+
+        .copy, .programer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
